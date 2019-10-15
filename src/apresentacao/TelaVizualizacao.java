@@ -137,13 +137,10 @@ public class TelaVizualizacao extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
-        
-                
+           try {
+                       
             if(oMain.ValidarConta(jTextFieldConta.getText())){
                 
-                
-            
         
             String conta = (jTextFieldConta.getText());
 
@@ -161,6 +158,10 @@ public class TelaVizualizacao extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Conta Invalida");
         
     }
+            } catch (Exception e) {
+               
+                JOptionPane.showMessageDialog(null, e);
+            }
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
