@@ -1,0 +1,75 @@
+=====================
+Pre-analise
+=====================
+1. Descrição do processo:  
+  Alterar para pesquisar notas do estado origem e estado destino
+
+2. Banco de dados:  
+  Nenhuma  alteração será realizada
+
+3. Desenvolvimento: 
+  C:\Sistemas\Siac\Fontes\ManifestoDocFiscal.pas
+ C:\Sistemas\Siac\Fontes\ManifestoDocFiscal.dfm
+      Alterar para que ao montar a consulta considere os estado origem destino e ufs do percurso
+
+
+4. Pontos AFETADOS: 
+     Gestor
+       Manifesto de documentos fiscais 
+
+LELES 
+Analista de Sistemas. 
+==========================================
+Casos de teste:
+==========================================
+Resumo do Teste:  
+  Permitir selecionar notas dos estados envolvidos no manifesto
+
+Detalhes do Teste:  
+
+  1 Gestor
+    1.1 Vendas\Manifesto de documentos fiscais\Cadastro
+         Inserir local de carregamento  e UF de descarregamento
+         Na aba Rodoviário e em Informações dos documentos, clicar no sinal de "+"  | NF-e própria.
+         Inserir notas do estado origem
+
+Resultados do Teste: 
+  Permitir selecionar notas dos estados envolvidos no manifesto
+
+=======================
+Controle de qualidade:
+=======================
+ Equipe de Testes 
+       	   Feito testes conforme solicitado e nenhuma divergência encontrada.
+ 
+ 
+  Data do Teste: 01/10/2019 17:53:33
+ 
+  Versão: CES GESTOR   
+  EDUARDO
+ ___________________________________________________________________
+  Testes realizados:   
+ 
+ 
+ Requisito 24053, 24940:
+
+OBS: Foi necessário fazer o teste conforme o requisito 24053 conforme orientação do desenvolvedor. 
+
+Foram feitos os testes com os seguintes parâmetros: 
+
+* Realiza checkout automático nas vendas - Marcado e desmarcado.
+* Utiliza lanc de lote na venda de mercadorias - Marcado e desmarcado. 
+* Utiliza Módulo Fiscal - Marcado e desmarcado.
+* Utiliza análise de pedidos - Marcado e desmarcado.
+* Utiliza fila de bloqueio de faturamento de pedidos - Marcado e desmarcado.
+* Utiliza lote de produtos - Marcado.
+* Utiliza Depósitos - Marcado e desmarcado.
+
+Foram feitas as vendas com as condições de pagamento do tipo: A vista, a prazo e acumulativo. 
+ 
+ 1.0 - feito venda para o produto com quantidade de estoque superior a quantidade do lote ou endereço.
+ 1.1 - feito venda com a quantidade inferiro e igual ao estoque do produto/lote/endereço.
+ 1.2 - Cancelamento de venda.
+ 1.3 - Devolução de venda.
+ 1.4 - Cancelamento de devolução de venda.
+ 1.5 - Manutenção de lote individual. 
